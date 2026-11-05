@@ -1,0 +1,211 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-11-05T17:18:36.365969+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "style_playbook": "flat-motion-graphics",
+      "scenes": [
+        {
+          "id": "scene_1a",
+          "type": "generated",
+          "description": "Plan 1a (0 \u00e0 3s) : Plan moyen, le client aux cheveux chatains et veste en cuir noire s assoit au bar en bois et pose 4 doigts sur le comptoir.",
+          "start_seconds": 0.0,
+          "end_seconds": 3.0,
+          "script_section_id": "sec_1a",
+          "framing": "medium",
+          "movement": "static",
+          "shot_language": {
+            "shot_size": "medium",
+            "camera_movement": "static",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "medium",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Etablir le lieu, le client et la commande de 4 verres.",
+          "narrative_role": "establish_context",
+          "information_role": "Le client entre et commande 4 verres.",
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B du client posant 4 doigts au bar",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "scene_1b",
+          "type": "generated",
+          "description": "Plan 1b (3 \u00e0 8.5s) : Plan sur le barman de 45 ans avec moustache soign\u00e9e, chemise \u00e0 carreaux rouge et tablier marron qui essuie un verre au torchon en souriant avec curiosit\u00e9.",
+          "start_seconds": 3.0,
+          "end_seconds": 8.5,
+          "script_section_id": "sec_1b",
+          "framing": "medium_close",
+          "movement": "static",
+          "shot_language": {
+            "shot_size": "medium_close",
+            "camera_movement": "static",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "shallow",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Montrer la curiosit\u00e9 bienveillante du barman qui pose sa question.",
+          "narrative_role": "introduce_subject",
+          "information_role": "Le barman demande quelle est l occasion sp\u00e9ciale.",
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B du barman essuyant un verre en parlant",
+              "source": "generate"
+            },
+            {
+              "type": "audio",
+              "description": "Audio dialogue barman voice_1b_barman.mp3",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "scene_2a",
+          "type": "generated",
+          "description": "Plan 2a (8.5 \u00e0 12.5s) : Gros plan sur le visage du jeune client qui r\u00e9pond avec un demi-sourire timide.",
+          "start_seconds": 8.5,
+          "end_seconds": 12.5,
+          "script_section_id": "sec_2a",
+          "framing": "close_up",
+          "movement": "dolly_in",
+          "shot_language": {
+            "shot_size": "close_up",
+            "camera_movement": "dolly_in",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "shallow",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Capturer l aveu timide du client (Ma premi\u00e8re fellation).",
+          "narrative_role": "build_tension",
+          "information_role": "R\u00e9v\u00e9lation de la pr\u00e9tendue premi\u00e8re fois.",
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B gros plan client demi-sourire timide",
+              "source": "generate"
+            },
+            {
+              "type": "audio",
+              "description": "Audio dialogue client voice_2a_client.mp3",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "scene_2b",
+          "type": "generated",
+          "description": "Plan 2b (12.5 \u00e0 18.5s) : Plan moyen, le barman a un grand sourire ravi, tape chaleureusement l \u00e9paule du client et d\u00e9pose un cinqui\u00e8me verre sur le comptoir.",
+          "start_seconds": 12.5,
+          "end_seconds": 18.5,
+          "script_section_id": "sec_2b",
+          "framing": "medium",
+          "movement": "static",
+          "shot_language": {
+            "shot_size": "medium",
+            "camera_movement": "static",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "medium",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Mettre en sc\u00e8ne l explosion de joie et de f\u00e9licitations du barman.",
+          "narrative_role": "emotional_beat",
+          "information_role": "Le barman offre un cinqui\u00e8me verre pour f\u00eater cela.",
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B barman tout sourire d\u00e9posant le 5e verre",
+              "source": "generate"
+            },
+            {
+              "type": "audio",
+              "description": "Audio dialogue barman voice_2b_barman.mp3",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "scene_3a",
+          "type": "generated",
+          "description": "Plan 3a (18.5 \u00e0 23.5s) : Gros plan serr\u00e9 sur le visage du client qui fronce les sourcils et fait une grimace de d\u00e9go\u00fbt en repoussant le verre de la main.",
+          "start_seconds": 18.5,
+          "end_seconds": 23.5,
+          "script_section_id": "sec_3a",
+          "framing": "close_up",
+          "movement": "static",
+          "shot_language": {
+            "shot_size": "close_up",
+            "camera_movement": "static",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "shallow",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Amorcer le revirement comique avec la r\u00e9pulsion du client.",
+          "narrative_role": "deliver_payload",
+          "information_role": "Le client refuse le verre avec une moue d\u00e9go\u00fbt\u00e9e.",
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B client grima\u00e7ant de d\u00e9go\u00fbt en repoussant le verre",
+              "source": "generate"
+            },
+            {
+              "type": "audio",
+              "description": "Audio dialogue client voice_3a_client.mp3",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "scene_3b",
+          "type": "generated",
+          "description": "Plan 3b (23.5 \u00e0 30.0s) : Le client termine sa phrase, l air \u00e9coeur\u00e9 et d\u00e9pit\u00e9 devant ses shooters.",
+          "start_seconds": 23.5,
+          "end_seconds": 30.0,
+          "script_section_id": "sec_3b",
+          "framing": "medium_close",
+          "movement": "static",
+          "shot_language": {
+            "shot_size": "medium_close",
+            "camera_movement": "static",
+            "lighting_key": "tungsten_warm",
+            "depth_of_field": "shallow",
+            "color_temperature": "warm"
+          },
+          "shot_intent": "Livrer la chute d\u00e9finitive du gag et clore la vid\u00e9o.",
+          "narrative_role": "resolution",
+          "information_role": "La raison des 4 verres est enfin r\u00e9v\u00e9l\u00e9e.",
+          "hero_moment": true,
+          "required_assets": [
+            {
+              "type": "video",
+              "description": "Clip vid\u00e9o Wan 2.1 1.3B client d\u00e9pit\u00e9 avec ses verres au bar",
+              "source": "generate"
+            },
+            {
+              "type": "audio",
+              "description": "Audio dialogue client voice_3b_client.mp3",
+              "source": "generate"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

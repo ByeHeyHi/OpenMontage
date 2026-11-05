@@ -399,6 +399,10 @@ class VideoSelector(BaseTool):
             required = tool.input_schema.get("properties", {})
             if "query" in required and "query" not in adapted:
                 adapted["query"] = adapted.get("prompt", "")
+            if "model_variant" in required and "model_variant" not in adapted:
+                env_hint = os.environ.get("VIDEO_GEN_LOCAL_MODEL", "").lower()
+                if env_hint in getattr(tool, "provider_matrix", {}):
+                    adapted["model_variant"] = env_hint
 
         # Auto-resolve reference_image_path to a URL for providers that need it
         if adapted.get("operation") == "image_to_video" and adapted.get(

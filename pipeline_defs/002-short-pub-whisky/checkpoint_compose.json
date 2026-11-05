@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-05T18:01:49.191455+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": true,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "projects/002-short-pub-whisky/final_joke_whisky.mp4",
+          "format": "mp4",
+          "duration_seconds": 30.0,
+          "file_size_bytes": 9626695,
+          "resolution": "1080x1920",
+          "codec": "h264",
+          "audio_codec": "aac"
+        },
+        {
+          "path": "projects/002-short-pub-whisky/renders/final.mp4",
+          "format": "mp4",
+          "duration_seconds": 30.0,
+          "file_size_bytes": 9626695,
+          "resolution": "1080x1920",
+          "codec": "h264",
+          "audio_codec": "aac"
+        }
+      ],
+      "render_time_seconds": 3.43,
+      "verification_notes": [
+        "Vid\u00e9o finale g\u00e9n\u00e9r\u00e9e avec succ\u00e8s au format vertical 9:16 (1080x1920).",
+        "Dur\u00e9e exacte de 30.00 secondes respect\u00e9e.",
+        "6 clips 3D cartoon g\u00e9n\u00e9r\u00e9s localement avec Wan 2.1 1.3B.",
+        "Voix neuronales qu\u00e9b\u00e9coises synchronis\u00e9es (barman et client).",
+        "Fond musical jazzy et ambiance pub r\u00e9tro int\u00e9gr\u00e9s.",
+        "Sous-titres dynamiques ASS centr\u00e9s avec mise en valeur des punchlines."
+      ]
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

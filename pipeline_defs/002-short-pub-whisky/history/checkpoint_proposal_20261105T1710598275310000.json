@@ -1,0 +1,381 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "proposal",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-05T17:10:59.827531+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "La C\u00e9l\u00e9bration Trompeuse (3D Cartoon Stylis\u00e9)",
+          "hook": "Quatre shooters d un coup pour f\u00eater une grande premi\u00e8re ?",
+          "narrative_structure": "story",
+          "visual_approach": "Rendu 3D CGI cartoon textur\u00e9 et chaleureux (type Clash Royale / Pixar). Plans courts de 3 \u00e0 5 secondes avec jeu d expressions faciales exag\u00e9r\u00e9.",
+          "suggested_playbook": "flat-motion-graphics",
+          "target_audience": "Amateurs de com\u00e9die et de formats courts humoristiques sur mobile",
+          "target_platform": "youtube",
+          "target_duration_seconds": 30.0,
+          "key_points": [
+            "Incompr\u00e9hension comique progressive entre le barman jovial et le jeune client",
+            "Chute inattendue et d\u00e9go\u00fbt comique qui cl\u00f4ture le gag sans temps mort"
+          ],
+          "core_message": "Une c\u00e9l\u00e9bration qui n en est pas une : le mauvais go\u00fbt l emporte toujours.",
+          "cta": "Abonne-toi pour plus de gags de comptoir !",
+          "tone": "Humoristique, chaleureux, feutr\u00e9, piquant",
+          "grounded_in": [
+            "Stylized 3D CGI Pub Wit",
+            "Micro-delayed punchline timing"
+          ],
+          "why_this_works": "Structure de blague classique en deux temps : installation rapide de la fausse c\u00e9l\u00e9bration puis r\u00e9v\u00e9lation explosive sur le d\u00e9go\u00fbt."
+        },
+        {
+          "id": "c2",
+          "title": "Le Duel des Regards au Comptoir",
+          "hook": "Cinq verres, un secret inavouable...",
+          "narrative_structure": "comparison",
+          "visual_approach": "Montage serr\u00e9 champ/contrechamp avec gros plans intenses sur les yeux et les mains.",
+          "target_platform": "tiktok",
+          "target_duration_seconds": 30.0,
+          "key_points": [
+            "Tension dramatique feinte jusqu au punchline comique",
+            "R\u00e9v\u00e9lation abrupte du secret"
+          ],
+          "core_message": "Le d\u00e9calage entre solennit\u00e9 et trivialit\u00e9.",
+          "why_this_works": "Joue sur le faux suspense cin\u00e9matographique."
+        },
+        {
+          "id": "c3",
+          "title": "Chronique du Barman Confesseur",
+          "hook": "Les pires confessions qu un barman entend apr\u00e8s minuit.",
+          "narrative_structure": "story",
+          "visual_approach": "Point de vue cam\u00e9ra subjective derri\u00e8re le comptoir.",
+          "target_platform": "youtube",
+          "target_duration_seconds": 30.0,
+          "key_points": [
+            "Immersion \u00e0 la premi\u00e8re personne",
+            "Malaise comique grandissant"
+          ],
+          "core_message": "Le barman a tout vu, mais pas \u00e7a.",
+          "why_this_works": "Perspective subjective favorisant le lien direct avec l internaute."
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "Correspond exactement aux sp\u00e9cifications du client : 6 plans d\u00e9coup\u00e9s, style 3D cartoon Pixar/Clash Royale, \u00e9clairage pub feutr\u00e9 et punchline comique."
+      },
+      "production_plan": {
+        "pipeline": "cinematic",
+        "playbook": "flat-motion-graphics",
+        "render_runtime": "ffmpeg",
+        "delivery_promise": {
+          "promise_type": "motion_led",
+          "motion_required": true,
+          "tone_mode": "playful",
+          "quality_floor": "presentable"
+        },
+        "stages": [
+          {
+            "stage": "script",
+            "tools": [
+              {
+                "tool_name": "script_writer",
+                "role": "Formalisation des 6 r\u00e9pliques et timings exacts",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Interne agent"
+              }
+            ],
+            "approach": "Script cal\u00e9 sur 30 secondes avec r\u00e9pliques synchronis\u00e9es et silences comiques intentionnels."
+          },
+          {
+            "stage": "scene_plan",
+            "tools": [
+              {
+                "tool_name": "scene_director",
+                "role": "D\u00e9coupage des 6 plans cam\u00e9ra (cadrages, mouvements, prompts Wan 2.1)",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Interne agent"
+              }
+            ],
+            "approach": "6 plans de 3s \u00e0 6s avec prompts n\u00e9gatifs chinois de Wan et descriptions g\u00e9om\u00e9triques coh\u00e9rentes (9:16)."
+          },
+          {
+            "stage": "assets",
+            "tools": [
+              {
+                "tool_name": "wan_video",
+                "provider": "wan",
+                "role": "G\u00e9n\u00e9ration vid\u00e9o locale des 6 clips avec le mod\u00e8le wan2.1-1.3b",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Mod\u00e8le Wan 2.1 1.3B local GPU configur\u00e9 dans .env, z\u00e9ro co\u00fbt cloud, 12GB VRAM optimis\u00e9"
+              },
+              {
+                "tool_name": "edge_tts",
+                "provider": "microsoft",
+                "role": "G\u00e9n\u00e9ration des voix barman et client en fran\u00e7ais qu\u00e9b\u00e9cois neural",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Voix haute qualit\u00e9 fr-CA (JeanNeural et AntoineNeural) locales/gratuites"
+              },
+              {
+                "tool_name": "pixabay_music",
+                "provider": "pixabay",
+                "role": "Recherche et t\u00e9l\u00e9chargement fond musical jazzy de pub r\u00e9tro",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Cl\u00e9 Pixabay configur\u00e9e dans .env, musique libre de droits"
+              }
+            ],
+            "approach": "G\u00e9n\u00e9ration locale s\u00e9quentielle pour respecter les 12 Go de VRAM, voix TTS synchronis\u00e9es et piste audio mix\u00e9e."
+          },
+          {
+            "stage": "edit",
+            "tools": [
+              {
+                "tool_name": "ffmpeg",
+                "role": "Montage des coupes, normalisation audio, timing des r\u00e9pliques et sous-titres ASS dynamiques",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "Moteur standard local"
+              }
+            ],
+            "approach": "Assemblage des 6 s\u00e9quences, mixage BGM + dialogue + ambiance pub, g\u00e9n\u00e9ration du fichier sous-titres .ass stylis\u00e9."
+          },
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "video_compose",
+                "provider": "ffmpeg",
+                "role": "Rendu final MP4 9:16 sous final_joke_whisky.mp4",
+                "available": true,
+                "estimated_cost_usd": 0.0,
+                "why_this_provider": "FFmpeg direct demand\u00e9 par l utilisateur pour concat\u00e9nation et burn de sous-titres sans overhead"
+              }
+            ],
+            "approach": "Encodage final H.264 / AAC 1080x1920 avec sous-titres int\u00e9gr\u00e9s."
+          }
+        ],
+        "quality_tradeoffs": [
+          {
+            "tradeoff": "Wan 2.1 1.3B local (gratuit) vs mod\u00e8les cloud 14B (Sora/Runway)",
+            "recommendation": "Wan 2.1 1.3B local : respecte la consigne de g\u00e9n\u00e9ration 100% locale sans frais API.",
+            "quality_impact": "G\u00e9n\u00e9ration ultra rapide et gratuite, mais l\u00e9g\u00e8re simplification des textures fines par rapport \u00e0 un mod\u00e8le 14B."
+          },
+          {
+            "tradeoff": "FFmpeg direct vs Remotion/HyperFrames",
+            "recommendation": "FFmpeg direct : parfait pour l assemblage de vid\u00e9os IA g\u00e9n\u00e9r\u00e9es compl\u00e8tes avec mixage audio et sous-titres dynamiques.",
+            "quality_impact": "Pas d overhead React/Node, pipeline direct et robuste."
+          }
+        ],
+        "alternative_paths": [
+          {
+            "description": "Pipeline 100% local (Wan 2.1 1.3B + Edge-TTS fr-CA + FFmpeg)",
+            "total_cost_usd": 0.0,
+            "quality_level": "standard",
+            "what_changes": "Aucun co\u00fbt cloud, ex\u00e9cution locale sur RTX 5070."
+          }
+        ],
+        "decision_log_ref": "pipeline_defs\\002-short-pub-whisky\\decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "wan_video",
+            "operation": "G\u00e9n\u00e9ration de 6 plans vid\u00e9o Wan 2.1 1.3B locaux",
+            "quantity": 6,
+            "estimated_usd": 0.0,
+            "notes": "Ex\u00e9cution locale sur GPU RTX 5070 (0$)"
+          },
+          {
+            "tool": "edge_tts",
+            "operation": "Synth\u00e8se vocale bilingue qu\u00e9b\u00e9coise (Jean & Antoine)",
+            "quantity": 4,
+            "estimated_usd": 0.0,
+            "notes": "Edge-TTS local (0$)"
+          },
+          {
+            "tool": "pixabay_music",
+            "operation": "T\u00e9l\u00e9chargement musique de pub jazzy",
+            "quantity": 1,
+            "estimated_usd": 0.0,
+            "notes": "API Pixabay gratuite (0$)"
+          },
+          {
+            "tool": "ffmpeg",
+            "operation": "Assemblage et incrustation sous-titres dynamiques",
+            "quantity": 1,
+            "estimated_usd": 0.0,
+            "notes": "Binaire local FFmpeg (0$)"
+          }
+        ],
+        "budget_verdict": "within_budget"
+      },
+      "approval": {
+        "status": "pending"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "002-short-pub-whisky",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "pipeline_selection",
+          "subject": "Pipeline de production vid\u00e9o",
+          "options_considered": [
+            {
+              "option_id": "cinematic",
+              "label": "Cinematic Pipeline",
+              "score": 0.95,
+              "reason": "Id\u00e9al pour le d\u00e9coupage plan par plan, g\u00e9n\u00e9ration IA de plans vid\u00e9o narratifs et montage soign\u00e9"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "Animated Explainer",
+              "score": 0.6,
+              "reason": "Trop ax\u00e9 sur les infographies et voix off explicative",
+              "rejected_because": "Format inadapt\u00e9 \u00e0 un sketch comique narratif en plans coup\u00e9s"
+            }
+          ],
+          "selected": "cinematic",
+          "reason": "Correspond au cahier des charges shot-by-shot et mood feutr\u00e9 pub avec clips vid\u00e9o g\u00e9n\u00e9r\u00e9s.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Moteur d assemblage et de rendu",
+          "options_considered": [
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg Direct",
+              "score": 0.95,
+              "reason": "Assemblage direct, rapide et sans surco\u00fbt de compilation pour des clips vid\u00e9o IA pleine page avec sous-titres dynamiques"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion React",
+              "score": 0.75,
+              "reason": "Disponible sur la machine, excellent pour composants React graphiques complexes mais plus lourd pour du pur assemblage vid\u00e9o IA",
+              "rejected_because": "Overhead React inutile pour un assemblage de 6 clips vid\u00e9o IA existants demand\u00e9 en FFmpeg direct"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames HTML/GSAP",
+              "score": 0.7,
+              "reason": "Disponible sur la machine, tr\u00e8s performant pour typographie cin\u00e9tique web",
+              "rejected_because": "Moins adapt\u00e9 \u00e0 la concat\u00e9nation de clips vid\u00e9o et sous-titrage direct par rapport \u00e0 FFmpeg"
+            }
+          ],
+          "selected": "ffmpeg",
+          "reason": "Sp\u00e9cifi\u00e9 explicitement par l utilisateur et le plus performant pour assembler 6 plans vid\u00e9o IA.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Mode d authoring de la composition",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier (Montage sur mesure)",
+              "score": 0.95,
+              "reason": "Chaque plan, coupe audio et sous-titre est synchronis\u00e9 sur mesure pour le rythme comique du gag"
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.5,
+              "reason": "Gabarit g\u00e9n\u00e9rique",
+              "rejected_because": "Les gabarits g\u00e9n\u00e9riques d\u00e9truisent le timing comique n\u00e9cessaire"
+            }
+          ],
+          "selected": "atelier",
+          "reason": "Assure un timing pr\u00e9cis pour le comique de situation.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "G\u00e9n\u00e9rateur vid\u00e9o IA",
+          "options_considered": [
+            {
+              "option_id": "wan_video",
+              "label": "Wan 2.1 1.3B (Local GPU diffusers)",
+              "score": 0.98,
+              "reason": "Configur\u00e9 dans .env, poids d\u00e9j\u00e0 t\u00e9l\u00e9charg\u00e9s dans le cache HF, optimis\u00e9 pour 12GB VRAM sur RTX 5070"
+            }
+          ],
+          "selected": "wan_video",
+          "reason": "Moteur demand\u00e9 par l utilisateur et 100% pr\u00eat localement.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "voice_selection",
+          "subject": "Voix TTS pour les personnages",
+          "options_considered": [
+            {
+              "option_id": "edge_tts_quebec",
+              "label": "Edge-TTS Qu\u00e9b\u00e9cois (JeanNeural barman, AntoineNeural client)",
+              "score": 0.95,
+              "reason": "Voix neurales fr-CA avec intonation qu\u00e9b\u00e9coise authentique, chaleureuses et gratuites"
+            }
+          ],
+          "selected": "edge_tts_quebec",
+          "reason": "R\u00e9pond exactement au souhait d accent qu\u00e9b\u00e9cois avec distinction claire des deux personnages.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Musique de fond jazzy r\u00e9tro",
+          "options_considered": [
+            {
+              "option_id": "pixabay_music",
+              "label": "Pixabay Music (Jazz de pub r\u00e9tro libre de droits)",
+              "score": 0.9,
+              "reason": "API Pixabay configur\u00e9e dans .env, recherche rapide de pistes instrumentales acoustiques"
+            }
+          ],
+          "selected": "pixabay_music",
+          "reason": "Ambiance pub jazz feutr\u00e9e id\u00e9ale pour soutenir le dialogue.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

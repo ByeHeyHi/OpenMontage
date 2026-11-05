@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-11-05T17:18:13.468344+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Blague du Whisky au Bar",
+      "total_duration_seconds": 30.0,
+      "voice_performance": {
+        "performance_intent": "Com\u00e9die de comptoir en deux temps : installation chaleureuse avec barman jovial, puis chute abrupte avec d\u00e9go\u00fbt sinc\u00e8re du client.",
+        "pacing_profile": "conversational",
+        "energy_curve": "Medium setup (0-12s) -> High celebration (12-18s) -> Low disgust & punchline delivery (18-30s)",
+        "pause_policy": "Micro-pauses de 0.5s \u00e0 1s pour laisser respirer le comique de situation.",
+        "sample_section_id": "sec_3b",
+        "provider_notes": {
+          "barman_voice": "fr-CA-JeanNeural",
+          "client_voice": "fr-CA-AntoineNeural",
+          "language": "fr-CA"
+        }
+      },
+      "sections": [
+        {
+          "id": "sec_1a",
+          "label": "Intro - Arriv\u00e9e au bar",
+          "text": "[Ambiance de pub feutr\u00e9e, pas de dialogue. Le client s assoit et pose quatre doigts sur le comptoir.]",
+          "start_seconds": 0.0,
+          "end_seconds": 3.0,
+          "speaker_directions": "Silence vocal, bruit de pas et de tabouret, musique jazz feutr\u00e9e."
+        },
+        {
+          "id": "sec_1b",
+          "label": "Setup du barman",
+          "text": "Quatre shots d un coup pour vous ? Quelle est l occasion sp\u00e9ciale ?",
+          "start_seconds": 3.0,
+          "end_seconds": 8.5,
+          "speaker_directions": "Barman curieux avec sourire bienveillant.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "medium",
+            "emphasis_words": [
+              "Quatre shots",
+              "occasion sp\u00e9ciale"
+            ]
+          }
+        },
+        {
+          "id": "sec_2a",
+          "label": "R\u00e9ponse timide du client",
+          "text": "Ma premi\u00e8re fellation.",
+          "start_seconds": 8.5,
+          "end_seconds": 12.5,
+          "speaker_directions": "Client parlant d une voix claire avec un demi-sourire timide.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "low",
+            "emphasis_words": [
+              "premi\u00e8re"
+            ]
+          }
+        },
+        {
+          "id": "sec_2b",
+          "label": "Fausse c\u00e9l\u00e9bration du barman",
+          "text": "Ah, f\u00e9licitations ! Laisse-moi t offrir le cinqui\u00e8me !",
+          "start_seconds": 12.5,
+          "end_seconds": 18.5,
+          "speaker_directions": "Barman ravi, rire franc et chaleureux, tape amicale sur l \u00e9paule.",
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "high",
+            "emphasis_words": [
+              "f\u00e9licitations",
+              "cinqui\u00e8me"
+            ]
+          }
+        },
+        {
+          "id": "sec_3a",
+          "label": "H\u00e9sitation et rejet du client",
+          "text": "Non merci...",
+          "start_seconds": 18.5,
+          "end_seconds": 23.5,
+          "speaker_directions": "Client grima\u00e7ant de d\u00e9go\u00fbt en repoussant le verre.",
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "low",
+            "emphasis_words": [
+              "Non merci"
+            ]
+          }
+        },
+        {
+          "id": "sec_3b",
+          "label": "Chute / Punchline",
+          "text": "... si quatre shooters ne me d\u00e9barrassent pas du go\u00fbt, rien ne le fera !",
+          "start_seconds": 23.5,
+          "end_seconds": 30.0,
+          "speaker_directions": "Client \u00e9coeur\u00e9 et d\u00e9pit\u00e9, regardant dans le vide.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "medium",
+            "emphasis_words": [
+              "go\u00fbt",
+              "rien ne le fera"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

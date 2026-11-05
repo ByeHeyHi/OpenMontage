@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-11-05T18:00:49.644987+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": true,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "ffmpeg",
+      "composition_mode": "atelier",
+      "cuts": [
+        {
+          "id": "cut_1a",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_1a.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 3.0,
+          "layer": "primary",
+          "reason": "Plan 1a: Arriv\u00e9e du client au bar et commande de 4 shots"
+        },
+        {
+          "id": "cut_1b",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_1b.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 5.5,
+          "layer": "primary",
+          "reason": "Plan 1b: Barman essuie son verre et pose sa question"
+        },
+        {
+          "id": "cut_2a",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_2a.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 4.0,
+          "layer": "primary",
+          "reason": "Plan 2a: Client r\u00e9pond timidement"
+        },
+        {
+          "id": "cut_2b",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_2b.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 6.0,
+          "layer": "primary",
+          "reason": "Plan 2b: Barman ravi offre le 5e verre"
+        },
+        {
+          "id": "cut_3a",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_3a.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 5.0,
+          "layer": "primary",
+          "reason": "Plan 3a: Grimace de d\u00e9go\u00fbt du client qui repousse le verre"
+        },
+        {
+          "id": "cut_3b",
+          "source": "projects/002-short-pub-whisky/assets/video/clip_3b.mp4",
+          "in_seconds": 0.0,
+          "out_seconds": 6.5,
+          "layer": "primary",
+          "reason": "Plan 3b: Chute comique finale du client"
+        }
+      ],
+      "audio": {
+        "narration": {
+          "segments": [
+            {
+              "asset_id": "asset_audio_1b",
+              "start_seconds": 3.3,
+              "end_seconds": 8.34
+            },
+            {
+              "asset_id": "asset_audio_2a",
+              "start_seconds": 9.0,
+              "end_seconds": 11.02
+            },
+            {
+              "asset_id": "asset_audio_2b",
+              "start_seconds": 12.8,
+              "end_seconds": 18.22
+            },
+            {
+              "asset_id": "asset_audio_3a",
+              "start_seconds": 19.5,
+              "end_seconds": 21.37
+            },
+            {
+              "asset_id": "asset_audio_3b",
+              "start_seconds": 24.2,
+              "end_seconds": 28.62
+            }
+          ]
+        },
+        "music": {
+          "asset_id": "asset_bgm",
+          "volume": 0.25,
+          "fade_in_seconds": 1.0,
+          "fade_out_seconds": 2.0
+        },
+        "sfx": [
+          {
+            "asset_id": "asset_sfx_ambience",
+            "start_seconds": 0.0,
+            "volume": 0.2
+          }
+        ]
+      },
+      "subtitles": {
+        "enabled": true,
+        "style": "word-by-word",
+        "source": "projects/002-short-pub-whisky/assets/subtitles.ass",
+        "position": "center"
+      }
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

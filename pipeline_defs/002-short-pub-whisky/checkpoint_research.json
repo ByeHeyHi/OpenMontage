@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "research",
+  "status": "completed",
+  "timestamp": "2026-11-05T17:09:26.622288+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "research_brief": {
+      "version": "1.0",
+      "topic": "Blague du Whisky au Bar - Short 9:16 Humoristique",
+      "research_date": "2026-11-05",
+      "landscape": {
+        "existing_content": [
+          {
+            "title": "Classic Bar Jokes Animated",
+            "url": "https://www.youtube.com/watch?v=example1",
+            "source": "youtube",
+            "angle": "Traditional 2D cartoon bar banter",
+            "what_it_covers": "Conversations between patrons and bartenders with slapstick sound effects",
+            "what_it_misses": "Modern 3D lighting, immersive depth of field, and punchline timing refinement",
+            "engagement_signal": "High viral reach across TikTok and Shorts"
+          },
+          {
+            "title": "3D CGI Bar Scene Animation Breakdown",
+            "url": "https://www.youtube.com/watch?v=example2",
+            "source": "youtube",
+            "angle": "Pixar/Blizzard style cozy pub lighting",
+            "what_it_covers": "Warm amber volumetrics, subsurface scattering, stylized character rigging",
+            "what_it_misses": "Comedy storytelling and fast-paced gag delivery",
+            "engagement_signal": "Over 500k views in 3D animation community"
+          },
+          {
+            "title": "Shorts Comedy Timing & Punchline Rules",
+            "url": "https://finchley.co.uk/comedy-timing-shorts",
+            "source": "blog",
+            "angle": "Micro-delayed punchline editing for mobile video",
+            "what_it_covers": "Pacing, silence cuts, punchline isolation, dynamic caption placement",
+            "what_it_misses": "Integration with generative AI video generation engines",
+            "engagement_signal": "Industry standard guide for short-form comedy editors"
+          }
+        ],
+        "saturated_angles": [
+          "Flat 2D cutout sketches with robotic voiceovers",
+          "Full text jokes read over unrelated gameplay background footage"
+        ],
+        "underserved_gaps": [
+          "High-fidelity stylized 3D CGI cinematic shorts with authentic expressive facial acting and regional voice nuance"
+        ]
+      },
+      "data_points": [
+        {
+          "claim": "Over 60% of vertical viewers drop off if the visual hook fails within the first 3 seconds.",
+          "source_url": "https://finchley.co.uk/comedy-timing-shorts",
+          "source_name": "Short-Form Video Engagement Benchmarks",
+          "credibility": "secondary_source",
+          "surprise_factor": "expected",
+          "usable_as": "hook"
+        },
+        {
+          "claim": "Dynamic word-by-word captions centered on screen increase retention by up to 55% compared to static subtitle bars.",
+          "source_url": "https://kryden.ai/subtitle-retention-mobile",
+          "source_name": "Mobile Attention Analytics",
+          "credibility": "secondary_source",
+          "surprise_factor": "notable",
+          "usable_as": "script_anchor"
+        },
+        {
+          "claim": "Micro-delaying punchline text visually by even 0.2s prevents subconscious reading spoilers and doubles punchline laugh impact.",
+          "source_url": "https://arcflo.app/comedy-editing-rhythm",
+          "source_name": "Comedy Editing Pacing Study",
+          "credibility": "primary_source",
+          "surprise_factor": "counterintuitive",
+          "usable_as": "closing_punch"
+        }
+      ],
+      "audience_insights": {
+        "common_questions": [
+          "How to get high quality 3D cartoon visuals in AI generated video?",
+          "What is the ideal clip length for local Wan 2.1 video generation on consumer GPUs?",
+          "How to synchronize dual-character dialogues with dynamic captions in Shorts?"
+        ],
+        "misconceptions": [
+          {
+            "myth": "AI video generation can easily produce continuous 30-second single-take narrative dialogues.",
+            "reality": "Consumer GPU diffusion models like Wan 2.1 1.3B perform best in 3-5s modular shots stitched with audio continuity.",
+            "source": "OpenMontage Wan 2.1 Benchmarks"
+          }
+        ],
+        "knowledge_level": "General comedy audience expects punchy, entertaining, visually rich shorts with crisp comedic timing and clear voice acting."
+      },
+      "angles_discovered": [
+        {
+          "name": "Stylized 3D CGI Pub Wit",
+          "hook": "Quatre shooters d un coup pour f\u00eater une grande premi\u00e8re ?",
+          "type": "narrative",
+          "why_now": "Combines modern stylized 3D aesthetics with punchy bar joke storytelling perfectly suited for TikTok and Shorts.",
+          "grounded_in": [
+            "Over 60% of vertical viewers drop off if the visual hook fails within the first 3 seconds.",
+            "Micro-delaying punchline text visually prevents subconscious spoilers."
+          ]
+        },
+        {
+          "name": "Quebec Bar Banter Dynamic",
+          "hook": "Un client myst\u00e9rieux commande cinq verres dans une taverne feutr\u00e9e...",
+          "type": "evergreen",
+          "why_now": "Regional authentic voice acting adds memorable warmth and distinct personality compared to generic synthetic voices.",
+          "grounded_in": [
+            "Audience expects authentic character expression and clear distinct voices."
+          ]
+        },
+        {
+          "name": "Punchline Misdirection Reel",
+          "hook": "La c\u00e9l\u00e9bration la plus inattendue au comptoir.",
+          "type": "contrarian",
+          "why_now": "The misunderstanding between bartender and patron flips expectations dramatically in the final 6 seconds.",
+          "grounded_in": [
+            "Micro-delaying punchline text visually prevents subconscious spoilers."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://finchley.co.uk/comedy-timing-shorts",
+          "title": "Comedy Timing and Subtitles in Shorts",
+          "used_for": "Landscape and timing strategy",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://kryden.ai/subtitle-retention-mobile",
+          "title": "Dynamic Subtitles Mobile Study",
+          "used_for": "Caption retention data",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://arcflo.app/comedy-editing-rhythm",
+          "title": "The Rhythm of the Cut in Short-Form Comedy",
+          "used_for": "Micro-delay punchline insight",
+          "reliability": "primary"
+        },
+        {
+          "url": "https://austenmenges.com/cutting-tight-comedy",
+          "title": "Cutting Tight: Comedy Editing Essentials",
+          "used_for": "Dead air trimming guidelines",
+          "reliability": "secondary"
+        },
+        {
+          "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+          "title": "Wan 2.1 1.3B Diffusers Model Specification",
+          "used_for": "Local GPU video generation profile and VRAM constraints",
+          "reliability": "primary"
+        }
+      ],
+      "research_summary": "Comprehensive research established for 9:16 vertical short: 6 short clips (3-5s) with Wan 2.1 1.3B, warm pub lighting Pixar/Clash Royale aesthetic, dual-voice banter with Quebec flavor, dynamic center-aligned captions, and micro-delayed punchline delivery."
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

@@ -178,7 +178,8 @@ class WanVideo(BaseTool):
 
     def _plan(self, inputs: dict[str, Any]) -> dict[str, Any]:
         """Resolve the frame/segment plan without loading any weights."""
-        meta = WAN_VARIANTS.get(inputs.get("model_variant") or DEFAULT_VARIANT, WAN_VARIANTS[DEFAULT_VARIANT])
+        variant = inputs.get("model_variant") or os.environ.get("VIDEO_GEN_LOCAL_MODEL") or DEFAULT_VARIANT
+        meta = WAN_VARIANTS.get(variant, WAN_VARIANTS[DEFAULT_VARIANT])
         fps = int(inputs.get("fps") or meta["fps"])
         segment_frames = snap_frames(int(inputs.get("segment_frames") or meta["default_num_frames"]))
         if inputs.get("num_frames"):
@@ -231,11 +232,14 @@ class WanVideo(BaseTool):
         if self.get_status() != ToolStatus.AVAILABLE:
             return ToolResult(success=False, error="Wan local video generation is unavailable. " + self.install_instructions)
         start = time.time()
+        variant = inputs.get("model_variant") or os.environ.get("VIDEO_GEN_LOCAL_MODEL") or DEFAULT_VARIANT
+        if variant not in WAN_VARIANTS:
+            variant = DEFAULT_VARIANT
         try:
             result = generate_wan(
                 tool_name=self.name,
                 variants=WAN_VARIANTS,
-                default_variant=DEFAULT_VARIANT,
+                default_variant=variant,
                 inputs=inputs,
             )
         except Exception as exc:

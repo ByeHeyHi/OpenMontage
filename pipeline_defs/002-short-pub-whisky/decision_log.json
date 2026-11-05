@@ -1,0 +1,167 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "proposal",
+      "category": "pipeline_selection",
+      "subject": "Pipeline de production vid\u00e9o",
+      "options_considered": [
+        {
+          "option_id": "cinematic",
+          "label": "Cinematic Pipeline",
+          "score": 0.95,
+          "reason": "Id\u00e9al pour le d\u00e9coupage plan par plan, g\u00e9n\u00e9ration IA de plans vid\u00e9o narratifs et montage soign\u00e9"
+        },
+        {
+          "option_id": "animated-explainer",
+          "label": "Animated Explainer",
+          "score": 0.6,
+          "reason": "Trop ax\u00e9 sur les infographies et voix off explicative",
+          "rejected_because": "Format inadapt\u00e9 \u00e0 un sketch comique narratif en plans coup\u00e9s"
+        }
+      ],
+      "selected": "cinematic",
+      "reason": "Correspond au cahier des charges shot-by-shot et mood feutr\u00e9 pub avec clips vid\u00e9o g\u00e9n\u00e9r\u00e9s.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Moteur d assemblage et de rendu",
+      "options_considered": [
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg Direct",
+          "score": 0.95,
+          "reason": "Assemblage direct, rapide et sans surco\u00fbt de compilation pour des clips vid\u00e9o IA pleine page avec sous-titres dynamiques"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion React",
+          "score": 0.75,
+          "reason": "Disponible sur la machine, excellent pour composants React graphiques complexes mais plus lourd pour du pur assemblage vid\u00e9o IA",
+          "rejected_because": "Overhead React inutile pour un assemblage de 6 clips vid\u00e9o IA existants demand\u00e9 en FFmpeg direct"
+        },
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames HTML/GSAP",
+          "score": 0.7,
+          "reason": "Disponible sur la machine, tr\u00e8s performant pour typographie cin\u00e9tique web",
+          "rejected_because": "Moins adapt\u00e9 \u00e0 la concat\u00e9nation de clips vid\u00e9o et sous-titrage direct par rapport \u00e0 FFmpeg"
+        }
+      ],
+      "selected": "ffmpeg",
+      "reason": "Sp\u00e9cifi\u00e9 explicitement par l utilisateur et le plus performant pour assembler 6 plans vid\u00e9o IA.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "proposal",
+      "category": "composition_mode",
+      "subject": "Mode d authoring de la composition",
+      "options_considered": [
+        {
+          "option_id": "atelier",
+          "label": "Atelier (Montage sur mesure)",
+          "score": 0.95,
+          "reason": "Chaque plan, coupe audio et sous-titre est synchronis\u00e9 sur mesure pour le rythme comique du gag"
+        },
+        {
+          "option_id": "templated",
+          "label": "Templated",
+          "score": 0.5,
+          "reason": "Gabarit g\u00e9n\u00e9rique",
+          "rejected_because": "Les gabarits g\u00e9n\u00e9riques d\u00e9truisent le timing comique n\u00e9cessaire"
+        }
+      ],
+      "selected": "atelier",
+      "reason": "Assure un timing pr\u00e9cis pour le comique de situation.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "G\u00e9n\u00e9rateur vid\u00e9o IA",
+      "options_considered": [
+        {
+          "option_id": "wan_video",
+          "label": "Wan 2.1 1.3B (Local GPU diffusers)",
+          "score": 0.98,
+          "reason": "Configur\u00e9 dans .env, poids d\u00e9j\u00e0 t\u00e9l\u00e9charg\u00e9s dans le cache HF, optimis\u00e9 pour 12GB VRAM sur RTX 5070"
+        }
+      ],
+      "selected": "wan_video",
+      "reason": "Moteur demand\u00e9 par l utilisateur et 100% pr\u00eat localement.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.98
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "proposal",
+      "category": "voice_selection",
+      "subject": "Voix TTS pour les personnages",
+      "options_considered": [
+        {
+          "option_id": "edge_tts_quebec",
+          "label": "Edge-TTS Qu\u00e9b\u00e9cois (JeanNeural barman, AntoineNeural client)",
+          "score": 0.95,
+          "reason": "Voix neurales fr-CA avec intonation qu\u00e9b\u00e9coise authentique, chaleureuses et gratuites"
+        }
+      ],
+      "selected": "edge_tts_quebec",
+      "reason": "R\u00e9pond exactement au souhait d accent qu\u00e9b\u00e9cois avec distinction claire des deux personnages.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-006",
+      "stage": "proposal",
+      "category": "music_source",
+      "subject": "Musique de fond jazzy r\u00e9tro",
+      "options_considered": [
+        {
+          "option_id": "pixabay_music",
+          "label": "Pixabay Music (Jazz de pub r\u00e9tro libre de droits)",
+          "score": 0.9,
+          "reason": "API Pixabay configur\u00e9e dans .env, recherche rapide de pistes instrumentales acoustiques"
+        }
+      ],
+      "selected": "pixabay_music",
+      "reason": "Ambiance pub jazz feutr\u00e9e id\u00e9ale pour soutenir le dialogue.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "proposal",
+      "category": "approval_policy",
+      "subject": "Full-run execution authorization",
+      "options_considered": [
+        {
+          "option_id": "full_run_go",
+          "label": "Autorisation d execution complete continue",
+          "score": 1.0,
+          "reason": "L utilisateur a valide le lancement des etapes de production avec go"
+        }
+      ],
+      "selected": "full_run_go",
+      "reason": "Confirmation explicite par l utilisateur.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    }
+  ]
+}

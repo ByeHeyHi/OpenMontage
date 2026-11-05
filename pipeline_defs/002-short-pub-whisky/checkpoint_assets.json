@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "project_id": "002-short-pub-whisky",
+  "pipeline_type": "cinematic",
+  "stage": "assets",
+  "status": "completed",
+  "timestamp": "2026-11-05T18:00:26.578120+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "total_cost_usd": 0.0,
+      "assets": [
+        {
+          "id": "asset_video_1a",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_1a.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_1a",
+          "duration_seconds": 3.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_video_1b",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_1b.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_1b",
+          "duration_seconds": 5.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_video_2a",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_2a.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_2a",
+          "duration_seconds": 4.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_video_2b",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_2b.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_2b",
+          "duration_seconds": 5.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_video_3a",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_3a.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_3a",
+          "duration_seconds": 5.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_video_3b",
+          "type": "video",
+          "path": "projects/002-short-pub-whisky/assets/video/clip_3b.mp4",
+          "source_tool": "wan_video",
+          "scene_id": "scene_3b",
+          "duration_seconds": 5.06,
+          "resolution": "480x848",
+          "model": "wan2.1-1.3b",
+          "format": "mp4"
+        },
+        {
+          "id": "asset_audio_1b",
+          "type": "narration",
+          "path": "projects/002-short-pub-whisky/assets/audio/voice_1b_barman.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "scene_1b",
+          "duration_seconds": 5.04,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_audio_2a",
+          "type": "narration",
+          "path": "projects/002-short-pub-whisky/assets/audio/voice_2a_client.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "scene_2a",
+          "duration_seconds": 2.02,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_audio_2b",
+          "type": "narration",
+          "path": "projects/002-short-pub-whisky/assets/audio/voice_2b_barman.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "scene_2b",
+          "duration_seconds": 5.42,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_audio_3a",
+          "type": "narration",
+          "path": "projects/002-short-pub-whisky/assets/audio/voice_3a_client.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "scene_3a",
+          "duration_seconds": 1.87,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_audio_3b",
+          "type": "narration",
+          "path": "projects/002-short-pub-whisky/assets/audio/voice_3b_client.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "scene_3b",
+          "duration_seconds": 4.42,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_bgm",
+          "type": "music",
+          "path": "projects/002-short-pub-whisky/assets/music/bgm_pub_jazz.mp3",
+          "source_tool": "audio_synth",
+          "scene_id": "scene_1a",
+          "duration_seconds": 35.0,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_sfx_ambience",
+          "type": "sfx",
+          "path": "projects/002-short-pub-whisky/assets/music/sfx_pub_ambience.mp3",
+          "source_tool": "audio_synth",
+          "scene_id": "scene_1a",
+          "duration_seconds": 35.0,
+          "format": "mp3"
+        },
+        {
+          "id": "asset_subtitles",
+          "type": "subtitle",
+          "path": "projects/002-short-pub-whisky/assets/subtitles.ass",
+          "source_tool": "subtitle_gen",
+          "scene_id": "scene_1b",
+          "format": "ass"
+        }
+      ]
+    }
+  },
+  "cost_snapshot": {
+    "total_cost_usd": 0.0,
+    "per_tool": {}
+  }
+}

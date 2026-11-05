@@ -1,0 +1,67 @@
+exemple de look joke cartoon : 
+https://www.youtube.com/shorts/gqA3FCHXFfw
+https://www.youtube.com/shorts/0QurTxqUPCA
+
+Montage video c'est difficile, car vraiment besoin de focusser sur reprendre même caractère et background et voix...
+
+Commencer avec vidéos de 5-10 secondes, manuellement via Flow ?
+
+***
+Génère une vidéo verticale au format Short (9:16, environ 30 secondes) dans le dossier de projet "projects/002-short-pub-whisky" en utilisant le moteur de génération vidéo locale Wan 2.1 configuré dans mon .env.
+
+1. Paramètres du Pipeline de Génération :
+- Moteur Vidéo : Utilise le pipeline local diffusers avec le modèle 'wan2.1-1.3b' (VIDEO_GEN_LOCAL_ENABLED=true).
+- Résolution & Rendu : 9:16 vertical (ex: 480x854 ou 720x1280), plans courts de 3 à 5 secondes par génération pour respecter la limite de 12 Go de VRAM.
+- Workflow : Mode Image-to-Video ou Text-to-Video haute fidélité.
+- Style Visuel : 3D cartoon stylisé, texturé et lumineux (rendu CGI moderne type Clash Royale / Pixar, éclairage de pub feutré et chaud).
+- Personnages récurrents :
+  * Le Barman : Homme de 45 ans, moustache soignée, chemise à carreaux rouge et tablier de bar marron, très expressif.
+  * Le Client : Jeune homme aux cheveux châtains, veste en cuir noire.
+
+2. Découpage Shot-by-Shot (Clips courts adaptés à l'IA) :
+- Plan 1a (0 à 3s) : Plan moyen, le client s'assoit au bar et pose 4 doigts sur le comptoir.
+- Plan 1b (3 à 7s) : Plan sur le barman qui essuie un verre, sourit avec curiosité.
+  * Voix Barman : "Quatre shots d'un coup pour vous ? Quelle est l'occasion spéciale ?"
+- Plan 2a (7 à 12s) : Gros plan sur le client qui répond avec un demi-sourire timide.
+  * Voix Client : "Ma première fellation."
+- Plan 2b (12 à 18s) : Plan moyen, le barman a un grand sourire ravi, tape l'épaule du client et dépose un cinquième verre.
+  * Voix Barman : "Ah, félicitations ! Laisse-moi t'offrir le cinquième !"
+- Plan 3a (18 à 24s) : Gros plan serré sur le visage du client qui fronce les sourcils et fait une grimace de dégoût en repoussant le verre de la main.
+  * Voix Client : "Non merci..."
+- Plan 3b (24 à 30s) : Le client termine sa phrase, l'air écoeuré et dépité.
+  * Voix Client : "... si quatre shooters ne me débarrassent pas du goût, rien ne le fera !"
+
+3. Audio, Sous-titres et Assemblage Final :
+- Voix TTS : Deux voix distinctes (une voix grave et chaleureuse pour le barman, une voix plus claire pour le client). Voix avec accent Québécois si possible.
+- Sous-titres : Sous-titres dynamiques synchronisés au centre de l'écran avec mots-clés surlignés (style Shorts/Reels).
+- Audio de fond : Musique de fond jazzy discrète avec bruits d'ambiance de pub rétro.
+- Sortie : Assemble tous les clips vidéo générés par Wan 2.1 avec l'audio complet via FFmpeg et exporte le fichier final MP4 dans "projects/002-short-pub-whisky/final_joke_whisky.mp4".
+```[cite: 1, 2, 4]
+
+****
+
+Génère une vidéo verticale au format Short (9:16, environ 30 secondes) pour une publication sur YouTube et TikTok, en utilisant les pipelines OpenMontage.
+
+1. Style Visuel et Ambiance (Inspiré des standards d'animation modernes) :
+- Style d'animation : 3D cartoon ultra-expressif, soigné et dynamique (rendu très coloré, lumineux et fluide, similaire aux standards de ces vidéos https://www.youtube.com/shorts/gqA3FCHXFfw , https://www.youtube.com/shorts/0QurTxqUPCA).
+- Éclairage : Chaleureux, dynamique, mettant en valeur les expressions faciales exagérées et comiques des personnages.
+- Consistance des personnages : Utiliser le profil de personnage récurrent configuré pour le "Barman" (homme de 45 ans, tablier, chemise à carreaux, expressions très vivantes) et le "Client" (jeune homme en veste en cuir).
+
+2. Structure et Découpage des Plans (Shot-by-Shot) :
+- Plan 1 (0 à 7s) [L'arrivée au bar] : 
+  * Visuel : Un homme entre dans un bar, l'air décidé, et s'assoit sur un des tabourets. Le barman le regarde avec un grand sourire curieux et lui demande ce qu'il veut boire. L'homme commande quatre shooters de whisky pour lui.
+  * Voix off (Barman, ton chaleureux) : "Quatre shots pour vous ? Quelle est l'occasion spéciale ?"
+- Plan 2 (7 à 18s) [La fausse bonne nouvelle] : 
+  * Visuel : Le barman affiche un sourire de félicitations éclatant, tape l'homme amicalement sur l'épaule et sort une bouteille supplémentaire.
+  * Voix off (Client) : "Première fellation."
+  * Voix off (Barman) : "Ah, félicitations ! Laisse-moi t'offrir le cinquième !"
+- Plan 3 (18 à 30s) [La chute] : 
+  * Visuel : Gros plan serré sur le visage de l'homme, qui fait une grimace de dégoût et refuse d'un geste de la main.
+  * Voix off (Client) : "Non merci, si quatre shooters ne me débarrassent pas du goût, rien ne le fera."
+
+3. Audio et Montage :
+- Voix off : Utiliser le moteur TTS configuré avec deux voix distinctes et expressives (une voix grave et posée pour le barman, une voix plus jeune et dynamique pour le client).
+- Sous-titres : Activer la génération automatique de sous-titres dynamiques, colorés et rythmés au centre de l'écran (style cartoon/shorts).
+- Musique de fond : Ajouter une piste audio discrète de jazz feutré / ambiance de bar rythmée libre de droits.
+
+Exécute le workflow complet d'OpenMontage pour produire le fichier MP4 final dans le dossier d'export (..\OpenMontage\projects\002-short-pub-whisky).
